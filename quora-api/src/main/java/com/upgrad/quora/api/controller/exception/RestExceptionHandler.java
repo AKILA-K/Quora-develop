@@ -60,4 +60,5 @@ public class RestExceptionHandler {
         return new ResponseEntity<ErrorResponse>(
                 new ErrorResponse().code(exc.getCode()).message(exc.getErrorMessage()), HttpStatus.CONFLICT);
     }
+
 }
